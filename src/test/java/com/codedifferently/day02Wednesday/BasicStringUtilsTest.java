@@ -88,9 +88,10 @@ public class BasicStringUtilsTest {
     public void invertCasingTest2() {
         // Given
         String expected = "sHE sELls SEa sHeLlS";
-
+       String input =  BasicStringUtils.invertCasing(expected);
+        System.out.println( BasicStringUtils.invertCasing(expected));
         // When
-        String actual = BasicStringUtils.invertCasing(BasicStringUtils.invertCasing(expected));
+        String actual = BasicStringUtils.invertCasing(input);
 
         // Then
         Assert.assertEquals(expected, actual);
